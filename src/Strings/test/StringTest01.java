@@ -5,7 +5,7 @@ public class StringTest01 {
         String nome = "Lucas"; // String constant pool, são imutáveis
         String nome2 = "Lucas";
         nome.concat(" Oliveira");
-        System.out.println(nome == nome2); // compara a referência
+        System.out.println(nome == nome2); // compara a referência do objeto, se apontam para o mesmo objeto na memória
 
         String nome3 = new String("Lucas"); // variavel de referencia, 2 objeto tipo string,
         // 3 uma string na pool de strings
