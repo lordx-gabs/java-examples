@@ -1,7 +1,5 @@
 package enumeracao;
 
-import org.jetbrains.annotations.Nullable;
-
 public enum PersonType {
     FISICA(1, "Pessoa FISICA") {
         @Override
@@ -34,7 +32,6 @@ public enum PersonType {
 
     public abstract double calcularDesconto(double valor);
 
-    @Nullable
     public static PersonType valueOfDescricao(String descricao) {
         for (PersonType tipoClient : values()) {
             if(tipoClient.getDescricao().equals(descricao)) {
